@@ -149,10 +149,23 @@
 //        }
 //    }
 //}
+//public class Main {
+//    public static void main(String[] args) {
+//        for (int i = 5; i >= 1; i--){
+//            System.out.println(i);
+//        }
+//    }
+//}
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        for (int i = 5; i >= 1; i--){
-            System.out.println(i);
-        }
+        System.out.print("Введите число, которое хотите проверить - ");
+        Scanner scan = new Scanner(System.in);
+        int number = scan.nextInt();
+        if (number%2 == 0){
+            System.out.println(number + " - четное число");
+        }else System.out.println(number + " - нечетное число");
+
     }
 }
