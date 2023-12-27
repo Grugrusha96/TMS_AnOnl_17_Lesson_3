@@ -124,19 +124,28 @@
 //
 //    }
 //}
-import java.util.Scanner;
-
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        Scanner scan = new Scanner(System.in);
+//        System.out.print("Введите сумму вклада: ");
+//        float sum = scan.nextFloat();
+//        System.out.print("Введите количество месяцев: ");
+//        int month = scan.nextInt();
+//        for (int i = 1; i <= month; i++){
+//            sum += sum * 0.07;
+//        }
+//        String formattedSum = String.format("%.2f", sum);
+//        System.out.println("Итоговая сумма: " + formattedSum);
+//    }
+//}
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.print("Введите сумму вклада: ");
-        float sum = scan.nextFloat();
-        System.out.print("Введите количество месяцев: ");
-        int month = scan.nextInt();
-        for (int i = 1; i <= month; i++){
-            sum += sum * 0.07;
+        for(int i = 1; i <= 99; i++){
+            if (i % 2 == 1){
+                System.out.println(i);
+            }
         }
-        String formattedSum = String.format("%.2f", sum);
-        System.out.println("Итоговая сумма: " + formattedSum);
     }
 }
