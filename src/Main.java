@@ -83,20 +83,44 @@
 //        }
 //    }
 //}
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        System.out.print("Введите температуру на улице - ");
+//        Scanner scan = new Scanner(System.in);
+//        int t = scan.nextInt();
+//
+//        if(t <= -20){
+//            System.out.println("холодно");
+//        } else if (t > -20 && t <= -5) {
+//            System.out.println("средне");
+//        } else if (t > -5) {
+//            System.out.println("Тепло");
+//        }
+//    }
+//}
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.print("Введите температуру на улице - ");
+        System.out.print("Введите номер - ");
         Scanner scan = new Scanner(System.in);
-        int t = scan.nextInt();
+        int colorNumber = scan.nextInt();
 
-        if(t <= -20){
-            System.out.println("холодно");
-        } else if (t > -20 && t <= -5) {
-            System.out.println("средне");
-        } else if (t > -5) {
-            System.out.println("Тепло");
-        }
+        String color = switch(colorNumber){
+            case 1 -> "Красный";
+            case 2 -> "Оранжевый";
+            case 3 -> "Желтый";
+            case 4 -> "Зеленый";
+            case 5 -> "Голубой";
+            case 6 -> "Синий";
+            case 7 -> "Фиолетовый";
+            default -> null;
+        };
+        if(color != null){
+            System.out.println(color + " - цвет под номером " + colorNumber);
+        }else System.out.println("В радуге всего 7 цветов!");
+
     }
 }
