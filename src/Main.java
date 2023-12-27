@@ -29,40 +29,40 @@
 //
 //    }
 //}
-import java.util.Scanner;
-
-public class Main {
-    public static void main(String[] args) {
-        System.out.print("Введите номер месяца - ");
-        Scanner num = new Scanner(System.in);
-        int monthNumber = num.nextInt();
-            if(monthNumber == 12) {
-                System.out.println("зима");
-            }else if(monthNumber == 1) {
-                    System.out.println("зима");
-                }else if(monthNumber == 2){
-                        System.out.println("зима");
-            } else if (monthNumber == 3) {
-                        System.out.println("весна");
-                    }else if (monthNumber == 4) {
-                        System.out.println("весна");
-                    }else if (monthNumber == 5) {
-                                System.out.println("весна");
-            } else if (monthNumber == 6) {
-                                System.out.println("лето");
-                            }else if (monthNumber == 7) {
-                                System.out.println("лето");
-                            }else if (monthNumber == 8) {
-                             System.out.println("лето");
-            } else if (monthNumber == 9) {
-                                System.out.println("осень");
-              }else if (monthNumber == 10) {
-                                System.out.println("осень");
-              }else if (monthNumber == 11) {
-                              System.out.println("осень");
-            } else {
-                System.out.println(monthNumber);
-            }
-
-    }
-}
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        System.out.print("Введите номер месяца - ");
+//        Scanner num = new Scanner(System.in);
+//        int monthNumber = num.nextInt();
+//            if(monthNumber == 12) {
+//                System.out.println("зима");
+//            }else if(monthNumber == 1) {
+//                    System.out.println("зима");
+//                }else if(monthNumber == 2){
+//                        System.out.println("зима");
+//            } else if (monthNumber == 3) {
+//                        System.out.println("весна");
+//                    }else if (monthNumber == 4) {
+//                        System.out.println("весна");
+//                    }else if (monthNumber == 5) {
+//                                System.out.println("весна");
+//            } else if (monthNumber == 6) {
+//                                System.out.println("лето");
+//                            }else if (monthNumber == 7) {
+//                                System.out.println("лето");
+//                            }else if (monthNumber == 8) {
+//                             System.out.println("лето");
+//            } else if (monthNumber == 9) {
+//                                System.out.println("осень");
+//              }else if (monthNumber == 10) {
+//                                System.out.println("осень");
+//              }else if (monthNumber == 11) {
+//                              System.out.println("осень");
+//            } else {
+//                System.out.println(monthNumber);
+//            }
+//
+//    }
+//}
