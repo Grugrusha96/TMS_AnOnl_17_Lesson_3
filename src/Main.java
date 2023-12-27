@@ -100,27 +100,43 @@
 //        }
 //    }
 //}
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        System.out.print("Введите номер - ");
+//        Scanner scan = new Scanner(System.in);
+//        int colorNumber = scan.nextInt();
+//
+//        String color = switch(colorNumber){
+//            case 1 -> "Красный";
+//            case 2 -> "Оранжевый";
+//            case 3 -> "Желтый";
+//            case 4 -> "Зеленый";
+//            case 5 -> "Голубой";
+//            case 6 -> "Синий";
+//            case 7 -> "Фиолетовый";
+//            default -> null;
+//        };
+//        if(color != null){
+//            System.out.println(color + " - цвет под номером " + colorNumber);
+//        }else System.out.println("В радуге всего 7 цветов!");
+//
+//    }
+//}
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.print("Введите номер - ");
         Scanner scan = new Scanner(System.in);
-        int colorNumber = scan.nextInt();
-
-        String color = switch(colorNumber){
-            case 1 -> "Красный";
-            case 2 -> "Оранжевый";
-            case 3 -> "Желтый";
-            case 4 -> "Зеленый";
-            case 5 -> "Голубой";
-            case 6 -> "Синий";
-            case 7 -> "Фиолетовый";
-            default -> null;
-        };
-        if(color != null){
-            System.out.println(color + " - цвет под номером " + colorNumber);
-        }else System.out.println("В радуге всего 7 цветов!");
-
+        System.out.print("Введите сумму вклада: ");
+        float sum = scan.nextFloat();
+        System.out.print("Введите количество месяцев: ");
+        int month = scan.nextInt();
+        for (int i = 1; i <= month; i++){
+            sum += sum * 0.07;
+        }
+        String formattedSum = String.format("%.2f", sum);
+        System.out.println("Итоговая сумма: " + formattedSum);
     }
 }
