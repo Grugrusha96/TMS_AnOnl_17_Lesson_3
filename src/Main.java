@@ -83,3 +83,20 @@
 //        }
 //    }
 //}
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.print("Введите температуру на улице - ");
+        Scanner scan = new Scanner(System.in);
+        int t = scan.nextInt();
+
+        if(t <= -20){
+            System.out.println("холодно");
+        } else if (t > -20 && t <= -5) {
+            System.out.println("средне");
+        } else if (t > -5) {
+            System.out.println("Тепло");
+        }
+    }
+}
