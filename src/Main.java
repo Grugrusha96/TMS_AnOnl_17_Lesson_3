@@ -156,16 +156,57 @@
 //        }
 //    }
 //}
-import java.util.Scanner;
-
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        System.out.print("Введите число, которое хотите проверить - ");
+//        Scanner scan = new Scanner(System.in);
+//        int number = scan.nextInt();
+//        if (number%2 == 0){
+//            System.out.println(number + " - четное число");
+//        }else System.out.println(number + " - нечетное число");
+//
+//    }
+//}
+//public class Main {
+//    public static void main(String[] args) {
+//        int i = 0;
+//        while(i <= 91){
+//            System.out.print((i += 7) + " ");
+//        }
+//    }
+//}
+//import java.util.Scanner;
+//
+//public class Main {
+//    public static void main(String[] args) {
+//        System.out.print("Введите целое положительное число: ");
+//        Scanner scan = new Scanner(System.in);
+//        int num;
+//        do {
+//            if (scan.hasNextInt()) {
+//                num = scan.nextInt();
+//                if (num >= 1) {
+//                    int sum = 0;
+//                    for (int i = 1; i <= num; i++){
+//                        sum += i;
+//                    }
+//                    System.out.println("Сумма от 1 до " + num + ": " +sum);
+//                    break;
+//                } else System.out.println("Введено число, которое не является положительным. Попробуйте ещё раз. Введите целое положительное число.");
+//            } else{
+//                System.out.println("Это не целое число. Попробуйте ещё раз. Введите целое положительное число.");
+//                scan.next(); //очистить буфер, чтобы избежать зацикливания
+//            }
+//        } while (true);
+//    }
+//}
 public class Main {
-    public static void main(String[] args) {
-        System.out.print("Введите число, которое хотите проверить - ");
-        Scanner scan = new Scanner(System.in);
-        int number = scan.nextInt();
-        if (number%2 == 0){
-            System.out.println(number + " - четное число");
-        }else System.out.println(number + " - нечетное число");
+    public static void main(String[] args){
+        for(int num = 0, i = 0; i <= 9; i++, num -=5){
+            System.out.print(num + " ");
 
+        }
     }
 }
